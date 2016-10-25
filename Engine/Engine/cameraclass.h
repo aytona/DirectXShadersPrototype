@@ -2,8 +2,7 @@
 
 #include <d3dx10math.h>
 
-class CameraClass
-{
+class CameraClass {
 public:
     CameraClass();
     CameraClass(const CameraClass&);

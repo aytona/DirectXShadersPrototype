@@ -1,40 +1,31 @@
 #include "inputclass.h"
 
-InputClass::InputClass()
-{
+InputClass::InputClass() {
 
 }
 
-InputClass::InputClass(const InputClass& other)
-{
+InputClass::InputClass(const InputClass& other) {
 
 }
 
-InputClass::~InputClass()
-{
+InputClass::~InputClass() {
 
 }
 
-void InputClass::Initialize()
-{
-	for (int i = 0; i < 256; i++)
-		m_keys[i] = false;
-	return;
+void InputClass::Initialize() {
+    for (int i = 0; i < 256; i++) {
+        m_keys[i] = false;
+    }
 }
 
-void InputClass::KeyDown(unsigned int input)
-{
-	m_keys[input] = true;
-	return;
+void InputClass::KeyDown(unsigned int input) {
+    m_keys[input] = true;
 }
 
-void InputClass::KeyUp(unsigned int input)
-{
-	m_keys[input] = false;
-	return;
+void InputClass::KeyUp(unsigned int input) {
+    m_keys[input] = false;
 }
 
-bool InputClass::IsKeyDown(unsigned int key)
-{
-	return m_keys[key];
+bool InputClass::IsKeyDown(unsigned int key) {
+    return m_keys[key];
 }
