@@ -162,6 +162,11 @@
     <ClInclude Include="textureclass.h" />
     <ClInclude Include="textureshaderclass.h" />
   </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="sprite_gs.hlsl" />
+    <FxCompile Include="sprite_ps.hlsl" />
+    <FxCompile Include="sprite_vs.hlsl" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
