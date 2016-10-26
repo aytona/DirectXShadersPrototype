@@ -1,21 +1,20 @@
-struct VertexInputType
-{
+// TYPEDEFS
+struct VertexInputType {
     float2 position : POSITION;
     float2 size : SIZE;
 	float4 color : COLOR;
 	float4 source : SOURCE;
 };
 
-struct PixelInputType
-{
+struct PixelInputType {
     float2 position : POSITION;
     float2 size : SIZE;
 	float4 color : COLOR;
 	float4 source : SOURCE;
 };
 
-PixelInputType main(VertexInputType input)
-{
+// Vertex Shader
+PixelInputType main(VertexInputType input) {
 	PixelInputType output;
 
 	output.position = input.position;
